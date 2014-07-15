@@ -1,0 +1,13 @@
+import scrapy
+
+class KhinfoSpider(scrapy.Spider):
+    name = "khinfo"
+    allowed_domains = ["kharkov.info"]
+    start_urls = [
+        "http://www.kharkov.info/place/bytovye-uslugi"
+    ]
+
+    def parse(self, response):
+        filename = "bytovye-uslugi.csv"
+        with open(filename, 'wb') as f:
+            f.write(response.body)
