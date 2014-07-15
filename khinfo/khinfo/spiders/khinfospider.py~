@@ -16,7 +16,7 @@ class KhinfoSpider(CrawlSpider):
         )
 
     def collect_urls(self, response):
-        self.start_urls.append(response.url)
+        self.start_urls.append(responce.url)
 
 
     def parse_it(self, response):
