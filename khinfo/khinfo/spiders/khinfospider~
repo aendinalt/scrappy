@@ -3,7 +3,7 @@ from scrapy.contrib.spiders import CrawlSpider, Rule
 from scrapy.contrib.linkextractors import LinkExtractor
 
 class KhinfoSpider(scrapy.Spider):
-    name = "khinfospider"
+    name = "khinfo"
     allowed_domains = ["kharkov.info"]
     start_urls = [
         "http://www.kharkov.info/place/"

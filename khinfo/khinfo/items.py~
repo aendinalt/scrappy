@@ -17,4 +17,4 @@ class KhinfoItem(scrapy.Item):
     description = scrapy.Field()
     phone = scrapy.Field()
     website_url = scrapy.Field()
-    
+    pass
